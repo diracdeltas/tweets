@@ -15,5 +15,11 @@ refresh:
 repost:
 	git cherry-pick $(p)
 
-timeline:
+timeline-graph:
 	git log --graph --all --decorate --oneline
+
+timeline:
+	git rev-list --all --remotes --pretty | less
+
+timeline-short:
+	git log --format="format:%Cred%cd %Cblue%h %Cgreen%cn%Creset: %s" --all --date=iso-local
