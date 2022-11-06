@@ -77,7 +77,7 @@ This is @bcrypt's janky twitter replacement.
   <a href="https://github.com/diracdeltas/tweets/network/members">
     <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./readme_segments/dark/C.png" width="543">
-      <img src="./readme_segments/light/C see the _suggested accounts_ to _follow_ here_  https___github.com_diracdeltas_tweets_network_members.png" width="543" alt="see the 'suggested accounts' to 'follow' here:  https://github.com/diracdeltas/tweets/network/members">
+      <img src="./readme_segments/light/see the _suggested accounts_ to _follow_ here_  https___github.com_diracdeltas_tweets_network_members.png" width="543" alt="see the 'suggested accounts' to 'follow' here:  https://github.com/diracdeltas/tweets/network/members">
     </picture>
   </a>
 </details>
