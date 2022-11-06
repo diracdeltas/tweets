@@ -13,7 +13,7 @@ refresh:
 	git fetch --all
 
 repost:
-	git cherry-pick $(p)
+	git cherry-pick -x $(p)
 
 timeline-graph:
 	git log --graph --all --decorate --oneline
