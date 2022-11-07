@@ -1,4 +1,4 @@
-.PHONY: go everybody post refresh repost timeline
+.PHONY: everybody go post refresh repost timeline-graph timeline timeline-short
 
 everybody:
 	./follow-everybody.bash
