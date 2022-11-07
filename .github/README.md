@@ -122,7 +122,7 @@ git cherry-pick -x <their commit hash>
 - to refresh your timeline and view it:
 
 ```
-git fetch --all && git rev-list --all --remotes --pretty | less
+GIT_TERMINAL_PROMPT=0 git fetch --all && git rev-list --all --remotes --pretty | less
 ```
 
 - some alternative ways to view your timeline (use `git show <commit hash>` to
