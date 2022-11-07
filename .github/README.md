@@ -85,7 +85,7 @@ This is @bcrypt's janky twitter replacement.
 ## Setup
 
 - fork https://github.com/diracdeltas/tweets
-- in your fork:
+- if you want a "clean" fork that doesn't have any of the helper scripts, do:
 
 ```
 git reset --hard d10b092
@@ -97,7 +97,7 @@ git push -f origin main
 - to post:
 
 ```
-git commit -m "your post" --allow-empty
+git commit -m --allow-empty
 git push
 ```
 
@@ -109,7 +109,7 @@ git fetch <git name>
 ```
 
 - to follow everybody using GitHub:
-  `./follow-everybody.bash`
+  `make everybody`
 
 - to repeat someone else's utterance:
 
@@ -122,15 +122,16 @@ git cherry-pick -x <their commit hash>
 - to refresh your timeline and view it:
 
 ```
-GIT_TERMINAL_PROMPT=0 git fetch --all && git rev-list --all --remotes --pretty | less
+make refresh
+make timeline
 ```
 
 - some alternative ways to view your timeline (use `git show <commit hash>` to
   show the full "tweet"):
 
 ```
-git log --format="format:%Cred%cd %Cblue%h %Cgreen%cn%Creset: %s" --all --date=iso-local
-git log --graph --all --decorate --oneline
+make timeline-graph
+make timeline-short
 ```
 
 - to get verified (GitHub-only):
@@ -142,33 +143,3 @@ git log --graph --all --decorate --oneline
 
 see `encrypt using the public key of a github user` in https://sshenc.sh/ or
 use your favorite key distribution mechanism to get their public key.
-
-## Cheatcodes
-
-```shell
-make post $"Your sage wisdom"
-```
-
----
-
-```shell
-make refresh
-```
-
----
-
-```shell
-make timeline
-```
-
-_OR_
-
-```shell
-make timeline-short
-```
-
-_OR_
-
-```shell
-make timeline-graph
-```

@@ -1,7 +1,7 @@
 .PHONY: everybody go post refresh repost timeline-graph timeline timeline-short
 
 everybody:
-	./follow-everybody.bash
+	GIT_TERMINAL_PROMPT=0 ./follow-everybody.bash
 
 go: everybody refresh timeline
 
