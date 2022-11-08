@@ -2,6 +2,10 @@
 
 # Copyright @datn 2022. Heavens forgive me for this
 # be in your repo dir for this
+
+# add yan's original repo so people have the staging branch
+git remote add diracdeltas https://github.com/diracdeltas/tweets/
+
 declare -i page_num
 page_num=1
 
