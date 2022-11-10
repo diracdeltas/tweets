@@ -10,7 +10,7 @@ post:
 	git push
 
 refresh:
-	GIT_TERMINAL_PROMPT=0 git fetch --all
+	GIT_TERMINAL_PROMPT=0 ./refresh.bash
 
 repost:
 	git cherry-pick -x $(p)
