@@ -143,3 +143,15 @@ make timeline-short
 
 see `encrypt using the public key of a github user` in https://sshenc.sh/ or
 use your favorite key distribution mechanism to get their public key.
+
+- to find a user @
+
+```
+make get_user q="User name"
+```
+
+or
+
+```
+make get_user q=user@hisemail.net
+```

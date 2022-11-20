@@ -23,3 +23,6 @@ timeline:
 
 timeline-short:
 	git log --format="format:%Cred%cd %Cblue%h %Cgreen%cn%Creset: %s" --all --date=iso-local
+
+get_user:
+	./get_user.bash $(q)
